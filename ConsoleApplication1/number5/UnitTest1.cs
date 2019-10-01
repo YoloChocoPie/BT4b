@@ -8,8 +8,15 @@ namespace number5
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestIsContain5()
         {
+            int[] Arr1 = new int[] { 1, 2, 3, 4 };
+            bool result0 = Program.IsContain5(Arr1);
+            Assert.AreEqual(false, result0);
+
+            int[] Arr2 = new int[] { 1, 2, 3, 4, 5 };
+            bool result1 = Program.IsContain5(Arr2);
+            Assert.AreEqual(true, result1);
         }
     }
 }

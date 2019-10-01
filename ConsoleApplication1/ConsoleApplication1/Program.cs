@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -22,6 +22,11 @@ namespace ConsoleApplication1
                 string str = Console.ReadLine();
                 Arr[i] = int.Parse(str);
             }
+        }
+
+        public static bool IsContain5(int[] Arr)
+        {
+            return true;
         }
     }
 }
